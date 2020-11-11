@@ -1,0 +1,26 @@
+body{
+    background-image: url("images/sport.jpg");
+}
+
+content{
+    background-color: gray;
+    opacity: 0.75;
+    width: 10in;
+    display: block;
+    margin: auto;
+}
+
+a{
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+    color: black;
+}
+
+a:hover{
+    color: red ;
+}
+
+#header{
+    background-color: darkgrey;
+}
