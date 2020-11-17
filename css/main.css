@@ -80,3 +80,13 @@ nav ul li:hover {
   color: white;
   cursor: pointer;
 }
+
+.champInfo{
+  margin: 30px;
+  padding: 10px; 
+  line-height: 1.5;
+}
+
+#champHead{
+  margin: 30px 40px;
+}
