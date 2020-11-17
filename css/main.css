@@ -63,6 +63,10 @@
   background-image: url(../images/champ1.jpg);
 }
 
+#gymshark {
+  background-image: url(/images/gymshark.png);
+}
+
 .btn {
   background-color: rgba(0, 0, 0, 0.726);
   padding: 10px;
