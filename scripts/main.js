@@ -3,7 +3,7 @@ let backBtn = document.getElementById('backBtn');
 
 let pics = {
     puma:['pumaLogo.png','pumaShoe.jpg','pumaCloth.jpg'],
-    nike:[],
+    nike:['jus.jpg','nik1.png','nike.jpg'],
     champion:['champ1.jpg','champ2.jpg'],
     gymShark:[]
 }
@@ -19,7 +19,7 @@ let next = ()=>{
         }else{
             document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.puma[current]})`;
         }
-        }
+    }
     if(document.querySelector('.imageContainer').id==='champion'){
         current++;
         if(current>1){
@@ -27,6 +27,15 @@ let next = ()=>{
             document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.champion[current]})`;
         }else{
             document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.champion[current]})`;
+        }
+    }
+    if(document.querySelector('.imageContainer').id==='nike'){
+        current++;
+        if(current>2){
+            current = 0;
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.nike[current]})`;
+        }else{
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.nike[current]})`;
         }
     }
 }
