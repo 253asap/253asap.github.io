@@ -41,12 +41,32 @@ let next = ()=>{
 }
 
 let back = ()=>{
-    current--;
-    if(current<0){
-        current = 2;
-        document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.puma[current]})`;
-    }else{
-        document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.puma[current]})`;
+    if(document.querySelector('.imageContainer').id==='puma'){
+        current--;
+        if(current<0){
+            current = 2;
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.puma[current]})`;
+        }else{
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.puma[current]})`;
+        }
+    }
+    if(document.querySelector('.imageContainer').id==='nike'){
+        current--;
+        if(current<0){
+            current = 2;
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.nike[current]})`;
+        }else{
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.nike[current]})`;
+        }
+    }
+    if(document.querySelector('.imageContainer').id==='champion'){
+        current--;
+        if(current<0){
+            current = 1;
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.champion[current]})`;
+        }else{
+            document.querySelector('.imageContainer').style.backgroundImage = `url(../images/${pics.champion[current]})`;
+        }
     }
 }
 
