@@ -3,7 +3,7 @@ let backBtn = document.getElementById('backBtn');
 
 let pics = {
     puma:['pumaLogo.png','pumaShoe.jpg','pumaCloth.jpg'],
-    nike:['jus.jpg','nik1.png','nike.jpg'],
+    nike:['jus.jpg','nik1.PNG','nike.jpg'],
     champion:['champ1.jpg','champ2.jpg'],
     gymShark:[]
 }
